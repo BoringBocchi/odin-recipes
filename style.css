@@ -1,0 +1,36 @@
+* {
+    font-family: Monaco, monospace;
+}
+
+body {
+    padding: 30px;
+}
+
+main {
+    height: 700px;
+    border-radius: 1;
+    border: 5px black solid;
+}
+
+
+/* Ok, so I'm not sure how flexbox work yet, but I wanted the title to be on it's own line, and have the foods separated in a row while filling the content as a whole, so asked chatgpt some help.
+
+Navigation is the overall box, it was an auto left-right margin to center it horizontally, I'm basically setting a display that sets a column-type layout (if I specifiy it), then, the direct child, displays it's inner elements horizontally, and with flex: 1 it fills the remaining space. Same with div.food*/
+
+.navigation {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+div.recipes {
+    display: flex;
+    flex: 1;
+}
+
+div.food {
+    flex: 1;
+    margin: 20px;
+}
